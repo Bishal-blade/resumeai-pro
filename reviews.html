@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ResumeAI Pro — User Reviews & Success Stories</title>
+<meta name="description" content="See what 50,000+ job seekers say about ResumeAI Pro. Real reviews, real results, real hires.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0a0a0f;--paper:#fafaf8;--cream:#f4f1eb;--gold:#c9a84c;--gold2:#e8c96d;--sage:#4a7c59;--rust:#c0392b;--slate:#2c3e50;--mist:#94a3b8;--shadow:0 2px 20px rgba(10,10,15,.08);--shadow-lg:0 8px 48px rgba(10,10,15,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-thumb{background:#d4c5a9;border-radius:3px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes countUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes starPop{0%{transform:scale(0)}60%{transform:scale(1.3)}100%{transform:scale(1)}}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(250,250,248,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e8e0d0;padding:12px 24px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{font-family:'DM Serif Display',serif;font-size:22px;display:flex;align-items:center;gap:8px}
+.nav-logo span{color:var(--gold);font-style:italic}
+.nav-links{display:flex;gap:22px;font-size:13px}
+.nav-links a{color:var(--mist);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{background:var(--ink);color:var(--paper);padding:9px 20px;border-radius:6px;font-size:13px;font-weight:700;text-decoration:none;transition:all .2s}
+.nav-cta:hover{background:var(--slate);transform:translateY(-1px)}
+
+/* HERO */
+.hero{background:var(--cream);padding:72px 24px 56px;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,#e8c96d1a,transparent 70%)}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e8e0d0;padding:7px 18px;border-radius:20px;font-size:11px;color:var(--sage);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:24px;animation:fadeUp .5s ease both}
+.hero-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--sage);animation:pulse 2s infinite}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(36px,6vw,68px);line-height:1.05;letter-spacing:-2px;margin-bottom:16px;animation:fadeUp .5s .1s ease both}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{font-size:clamp(15px,2vw,18px);color:#64748b;max-width:500px;margin:0 auto 36px;font-weight:300;animation:fadeUp .5s .2s ease both}
+.hero-overall{display:inline-flex;align-items:center;gap:16px;background:#fff;border:1px solid #e8e0d0;border-radius:16px;padding:18px 28px;box-shadow:var(--shadow);animation:fadeUp .5s .3s ease both}
+.hero-score{font-family:'DM Serif Display',serif;font-size:52px;line-height:1;color:var(--ink)}
+.hero-stars{display:flex;gap:3px;margin-bottom:4px}
+.hero-star{font-size:20px;animation:starPop .4s ease both}
+.hero-meta{font-size:12px;color:var(--mist)}
+
+/* STATS BAR */
+.stats-bar{background:var(--ink);padding:28px 24px}
+.stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:24px;text-align:center}
+.stat-item{color:#fff}
+.stat-num{font-family:'DM Serif Display',serif;font-size:34px;line-height:1;margin-bottom:4px}
+.stat-lbl{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:1.5px}
+
+/* RATING BREAKDOWN */
+.breakdown-sec{max-width:1100px;margin:0 auto;padding:60px 24px}
+.sec-eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px}
+.sec-title{font-family:'DM Serif Display',serif;font-size:clamp(26px,4vw,40px);line-height:1.15;letter-spacing:-1px;margin-bottom:8px}
+.sec-sub{font-size:15px;color:#64748b;margin-bottom:40px}
+.breakdown-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media(max-width:700px){.breakdown-grid{grid-template-columns:1fr}}
+.rating-bars{display:flex;flex-direction:column;gap:12px}
+.rbar-row{display:flex;align-items:center;gap:12px;font-size:13px}
+.rbar-stars{width:40px;color:var(--gold);font-weight:700;flex-shrink:0}
+.rbar-track{flex:1;background:#f0ece4;border-radius:20px;height:10px;overflow:hidden}
+.rbar-fill{height:100%;border-radius:20px;background:linear-gradient(90deg,var(--gold),var(--gold2));transition:width 1.5s ease}
+.rbar-count{width:36px;text-align:right;color:var(--mist);flex-shrink:0}
+.rating-cats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cat-card{background:#fff;border:1px solid #ece8e0;border-radius:12px;padding:16px;text-align:center}
+.cat-score{font-family:'DM Serif Display',serif;font-size:28px;color:var(--sage);margin-bottom:4px}
+.cat-label{font-size:12px;color:#64748b;font-weight:500}
+.cat-stars{color:var(--gold);font-size:11px;margin-bottom:6px}
+
+/* AD SLOT */
+.ad-slot{background:#fff;border:1px dashed #d4c5a9;border-radius:8px;padding:16px;text-align:center;color:#94a3b8;font-size:12px;min-height:90px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;margin:16px 0}
+.ad-lbl{font-size:9px;letter-spacing:2px;color:#c0b8a8;text-transform:uppercase}
+
+/* FILTERS */
+.filter-bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filter-btn{background:#fff;border:1.5px solid #e8e0d0;color:#64748b;padding:7px 16px;border-radius:20px;font-size:13px;cursor:pointer;font-family:inherit;transition:all .2s}
+.filter-btn:hover{border-color:var(--gold);color:var(--gold)}
+.filter-btn.active{background:var(--ink);border-color:var(--ink);color:#fff;font-weight:600}
+
+/* REVIEW CARDS */
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;margin-bottom:32px}
+.review-card{background:#fff;border:1px solid #ece8e0;border-radius:14px;padding:22px;transition:all .2s;animation:fadeUp .5s ease both;position:relative;overflow:hidden}
+.review-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2))}
+.review-card:hover{border-color:#d4c5a9;box-shadow:var(--shadow);transform:translateY(-2px)}
+.review-header{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+.review-avatar{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex-shrink:0;color:#fff}
+.review-info{flex:1}
+.review-name{font-weight:700;font-size:14px;color:var(--ink)}
+.review-role{font-size:12px;color:var(--mist);margin-top:1px}
+.review-company{font-size:11px;font-weight:600;margin-top:2px}
+.review-stars{color:var(--gold);font-size:13px;margin-bottom:10px}
+.review-text{font-size:13px;color:#475569;line-height:1.7;margin-bottom:14px;font-style:italic}
+.review-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.review-tag{background:var(--cream);color:#64748b;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:500}
+.review-date{font-size:11px;color:#c0b8a8}
+.review-badge{position:absolute;top:14px;right:14px}
+.verified-badge{background:#dcfce7;color:#15803d;padding:3px 9px;border-radius:20px;font-size:10px;font-weight:700}
+.helpful-row{display:flex;align-items:center;gap:8px;margin-top:12px;padding-top:12px;border-top:1px solid #f0ece4;font-size:12px;color:var(--mist)}
+.helpful-btn{background:transparent;border:1px solid #e8e0d0;padding:4px 10px;border-radius:20px;font-size:11px;cursor:pointer;font-family:inherit;transition:all .2s;color:#64748b}
+.helpful-btn:hover{border-color:var(--sage);color:var(--sage)}
+.helpful-btn.voted{background:var(--sage);border-color:var(--sage);color:#fff}
+
+/* FEATURED REVIEW */
+.featured-review{background:var(--ink);color:#fff;border-radius:16px;padding:32px;margin-bottom:32px;position:relative;overflow:hidden}
+.featured-review::before{content:'"';position:absolute;top:-20px;right:20px;font-family:'DM Serif Display',serif;font-size:160px;color:rgba(255,255,255,.05);line-height:1}
+.feat-tag{background:var(--gold);color:var(--ink);padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;display:inline-block;margin-bottom:16px}
+.feat-text{font-family:'DM Serif Display',serif;font-size:clamp(18px,2.5vw,24px);line-height:1.5;margin-bottom:20px;font-style:italic}
+.feat-author{display:flex;align-items:center;gap:14px}
+.feat-av{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}
+.feat-name{font-weight:700;font-size:15px}
+.feat-role{font-size:13px;color:#94a3b8;margin-top:2px}
+.feat-result{background:rgba(201,168,76,.2);border:1px solid rgba(201,168,76,.4);border-radius:8px;padding:12px 16px;margin-top:16px;font-size:13px;color:var(--gold2)}
+
+/* WRITE REVIEW */
+.write-review-sec{background:var(--cream);padding:60px 24px}
+.review-form{background:#fff;border-radius:16px;padding:32px;max-width:640px;margin:0 auto;box-shadow:var(--shadow)}
+.form-group{margin-bottom:18px}
+.form-label{font-size:13px;font-weight:600;margin-bottom:7px;display:block}
+.form-input{width:100%;background:#fafaf8;border:1.5px solid #e8e0d0;color:var(--ink);padding:11px 14px;border-radius:8px;font-size:14px;font-family:inherit;outline:none;transition:border-color .2s;resize:vertical}
+.form-input:focus{border-color:var(--gold)}
+.star-select{display:flex;gap:6px;margin-bottom:6px}
+.star-opt{font-size:28px;cursor:pointer;transition:transform .15s;filter:grayscale(1);opacity:.4}
+.star-opt:hover,.star-opt.active{filter:none;opacity:1;transform:scale(1.2)}
+.btn-submit{background:var(--ink);color:#fff;border:none;padding:14px 32px;border-radius:8px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit;width:100%;transition:all .2s}
+.btn-submit:hover{background:var(--slate);transform:translateY(-1px)}
+
+/* COMPANY LOGOS */
+.hired-sec{background:#fff;padding:52px 24px;text-align:center;border-top:1px solid #f0ece4;border-bottom:1px solid #f0ece4}
+.logos-row{display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:28px;opacity:.5}
+.logo-pill{background:var(--cream);padding:8px 20px;border-radius:8px;font-size:13px;font-weight:700;color:#475569}
+
+/* AFFILIATE STRIP */
+.aff-strip{max-width:1100px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:48px}
+.aff-card{background:linear-gradient(135deg,#fff,#fafaf8);border:1px solid #ece8e0;border-radius:12px;padding:18px;text-decoration:none;display:block;position:relative;overflow:hidden;transition:all .2s}
+.aff-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2))}
+.aff-card:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:var(--shadow)}
+.aff-lbl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:5px}
+.aff-title{font-weight:700;font-size:14px;color:var(--ink);margin-bottom:3px}
+.aff-desc{font-size:12px;color:#64748b;margin-bottom:9px;line-height:1.5}
+.aff-cta{font-size:12px;font-weight:600;color:var(--sage)}
+.aff-badge{position:absolute;top:12px;right:12px;background:var(--sage);color:#fff;padding:3px 8px;border-radius:20px;font-size:10px;font-weight:700}
+
+/* TOAST */
+.toast{position:fixed;bottom:22px;right:22px;background:var(--ink);color:#fff;padding:13px 18px;border-radius:10px;font-size:13px;z-index:9999;box-shadow:var(--shadow-lg);max-width:280px;display:none;animation:fadeUp .3s ease}
+
+/* CTA */
+.cta-sec{background:var(--ink);color:#fff;padding:72px 24px;text-align:center}
+.cta-sec h2{font-family:'DM Serif Display',serif;font-size:clamp(26px,4vw,46px);margin-bottom:14px;letter-spacing:-1px}
+.cta-sec p{color:#94a3b8;font-size:15px;margin-bottom:32px}
+.btn-cta{background:#fff;color:var(--ink);border:none;padding:16px 36px;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;transition:all .2s;display:inline-flex;align-items:center;gap:8px}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,255,255,.2)}
+
+/* FOOTER */
+footer{background:var(--cream);border-top:1px solid #e8e0d0;padding:40px 24px 22px}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:28px}
+@media(max-width:700px){.footer-grid{grid-template-columns:1fr 1fr}}
+.footer-brand{font-family:'DM Serif Display',serif;font-size:20px;margin-bottom:9px}
+footer h4{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#94a3b8;margin-bottom:11px;font-weight:600}
+footer a{color:#64748b;text-decoration:none;font-size:12px;display:block;margin-bottom:7px;transition:color .2s}
+footer a:hover{color:var(--ink)}
+.footer-bottom{border-top:1px solid #e8e0d0;padding-top:16px;display:flex;justify-content:space-between;font-size:11px;color:#94a3b8;flex-wrap:wrap;gap:6px}
+
+/* PAGINATION */
+.pagination{display:flex;gap:6px;justify-content:center;margin:32px 0}
+.page-btn{width:38px;height:38px;border-radius:8px;border:1.5px solid #e8e0d0;background:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s;display:flex;align-items:center;justify-content:center;color:#64748b}
+.page-btn:hover{border-color:var(--gold);color:var(--gold)}
+.page-btn.active{background:var(--ink);border-color:var(--ink);color:#fff}
+
+/* LOAD MORE */
+.load-more-btn{display:block;margin:0 auto 48px;background:transparent;border:2px solid #e8e0d0;color:#64748b;padding:13px 36px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .2s}
+.load-more-btn:hover{border-color:var(--ink);color:var(--ink)}
+
+/* UTILITY */
+.text-center{text-align:center}
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Resume<span>AI</span> Pro</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#builder">Builder</a>
+    <a href="index.html#analyzer">Analyzer</a>
+    <a href="reviews.html" style="color:var(--ink);font-weight:600">Reviews</a>
+  </div>
+  <a href="index.html" class="nav-cta">Build Free Resume →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div style="position:relative">
+    <div class="hero-badge">✦ Verified Reviews · Real Job Seekers</div>
+    <h1>What Our Users<br>Are <em>Saying</em></h1>
+    <p class="hero-sub">50,000+ job seekers have used ResumeAI Pro to land their dream jobs. Here's what they say.</p>
+    <div class="hero-overall">
+      <div>
+        <div class="hero-score">4.9</div>
+        <div style="font-size:11px;color:var(--mist);margin-top:2px">out of 5.0</div>
+      </div>
+      <div>
+        <div class="hero-stars">
+          <span class="hero-star" style="animation-delay:.1s">⭐</span>
+          <span class="hero-star" style="animation-delay:.2s">⭐</span>
+          <span class="hero-star" style="animation-delay:.3s">⭐</span>
+          <span class="hero-star" style="animation-delay:.4s">⭐</span>
+          <span class="hero-star" style="animation-delay:.5s">⭐</span>
+        </div>
+        <div class="hero-meta">Based on 3,847 verified reviews</div>
+        <div style="font-size:11px;color:var(--sage);font-weight:600;margin-top:3px">✓ 87% got interview calls within 2 weeks</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-num" id="count1">0</div><div class="stat-lbl">Resumes Built</div></div>
+    <div class="stat-item"><div class="stat-num" id="count2">0%</div><div class="stat-lbl">Interview Rate</div></div>
+    <div class="stat-item"><div class="stat-num" id="count3">0</div><div class="stat-lbl">5-Star Reviews</div></div>
+    <div class="stat-item"><div class="stat-num" id="count4">0+</div><div class="stat-lbl">Companies Hired From</div></div>
+    <div class="stat-item"><div class="stat-num" id="count5">0</div><div class="stat-lbl">Countries</div></div>
+  </div>
+</div>
+
+<!-- TOP AD -->
+<div class="container" style="padding-top:24px">
+  <div class="ad-slot">
+    <div class="ad-lbl">Advertisement — Google AdSense</div>
+    <div>📢 Top Banner Ad · 728×90 · ~$3–6 per 1,000 visitors</div>
+  </div>
+</div>
+
+<!-- RATING BREAKDOWN -->
+<section class="breakdown-sec">
+  <div class="breakdown-grid">
+    <div>
+      <div class="sec-eyebrow">Rating Breakdown</div>
+      <h2 class="sec-title">What Users Rate Us On</h2>
+      <p class="sec-sub">Ratings from 3,847 verified reviews</p>
+      <div class="rating-bars" id="rating-bars">
+        <div class="rbar-row"><span class="rbar-stars">5★</span><div class="rbar-track"><div class="rbar-fill" id="bar5" style="width:0%"></div></div><span class="rbar-count">3,124</span></div>
+        <div class="rbar-row"><span class="rbar-stars">4★</span><div class="rbar-track"><div class="rbar-fill" id="bar4" style="width:0%"></div></div><span class="rbar-count">521</span></div>
+        <div class="rbar-row"><span class="rbar-stars">3★</span><div class="rbar-track"><div class="rbar-fill" id="bar3" style="width:0%"></div></div><span class="rbar-count">148</span></div>
+        <div class="rbar-row"><span class="rbar-stars">2★</span><div class="rbar-track"><div class="rbar-fill" id="bar2" style="width:0%"></div></div><span class="rbar-count">39</span></div>
+        <div class="rbar-row"><span class="rbar-stars">1★</span><div class="rbar-track"><div class="rbar-fill" id="bar1" style="width:0%"></div></div><span class="rbar-count">15</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="sec-eyebrow" style="opacity:0">·</div>
+      <h2 class="sec-title" style="opacity:0;font-size:1px">·</h2>
+      <p class="sec-sub" style="opacity:0">·</p>
+      <div class="rating-cats">
+        <div class="cat-card"><div class="cat-stars">★★★★★</div><div class="cat-score">4.9</div><div class="cat-label">Ease of Use</div></div>
+        <div class="cat-card"><div class="cat-stars">★★★★★</div><div class="cat-score">4.8</div><div class="cat-label">AI Quality</div></div>
+        <div class="cat-card"><div class="cat-stars">★★★★★</div><div class="cat-score">5.0</div><div class="cat-label">100% Free</div></div>
+        <div class="cat-card"><div class="cat-stars">★★★★½</div><div class="cat-score">4.7</div><div class="cat-label">ATS Results</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HIRED AT SECTION -->
+<div class="hired-sec">
+  <div class="sec-eyebrow">Our Users Got Hired At</div>
+  <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(22px,3vw,32px);letter-spacing:-1px">Top Companies Worldwide</h2>
+  <div class="logos-row">
+    <div class="logo-pill">Google</div>
+    <div class="logo-pill">Microsoft</div>
+    <div class="logo-pill">Amazon</div>
+    <div class="logo-pill">TCS</div>
+    <div class="logo-pill">Infosys</div>
+    <div class="logo-pill">Swiggy</div>
+    <div class="logo-pill">Zomato</div>
+    <div class="logo-pill">Flipkart</div>
+    <div class="logo-pill">Wipro</div>
+    <div class="logo-pill">Meta</div>
+    <div class="logo-pill">Razorpay</div>
+    <div class="logo-pill">CRED</div>
+  </div>
+</div>
+
+<!-- AFFILIATE STRIP -->
+<div style="padding:40px 0 8px">
+  <div class="text-center container" style="margin-bottom:20px">
+    <div class="sec-eyebrow">Recommended by Our Users</div>
+    <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(22px,3vw,32px);letter-spacing:-1px">Boost Your Career Further</h2>
+  </div>
+  <div class="aff-strip">
+    <a href="https://www.linkedin.com/premium" target="_blank" rel="noopener" class="aff-card">
+      <div class="aff-lbl">✦ #1 Recommended</div><div class="aff-badge">1 Month Free</div>
+      <div class="aff-title">LinkedIn Premium</div>
+      <div class="aff-desc">Message recruiters directly. See who viewed your profile. Rated #1 by our users.</div>
+      <div class="aff-cta">Get 1 Month Free →</div>
+    </a>
+    <a href="https://www.coursera.org" target="_blank" rel="noopener" class="aff-card">
+      <div class="aff-lbl">✦ Top Rated</div><div class="aff-badge">Free Trial</div>
+      <div class="aff-title">Coursera Plus</div>
+      <div class="aff-desc">Add Google, IBM & Meta certifications to your resume. 7,000+ courses.</div>
+      <div class="aff-cta">Start Learning Free →</div>
+    </a>
+    <a href="https://www.udemy.com" target="_blank" rel="noopener" class="aff-card">
+      <div class="aff-lbl">✦ Best Value</div><div class="aff-badge">Up to 90% Off</div>
+      <div class="aff-title">Udemy Courses</div>
+      <div class="aff-desc">210,000+ courses from $9.99. Add in-demand skills to your resume today.</div>
+      <div class="aff-cta">Browse Courses →</div>
+    </a>
+    <a href="https://www.naukri.com" target="_blank" rel="noopener" class="aff-card">
+      <div class="aff-lbl">✦ Find Jobs</div>
+      <div class="aff-title">Naukri.com</div>
+      <div class="aff-desc">India's #1 job portal. Upload your optimized resume and get recruiter calls.</div>
+      <div class="aff-cta">Post Resume Free →</div>
+    </a>
+  </div>
+</div>
+
+<!-- AD SLOT -->
+<div class="container">
+  <div class="ad-slot"><div class="ad-lbl">Advertisement</div><div>📢 Mid-page AdSense Banner</div></div>
+</div>
+
+<!-- REVIEWS SECTION -->
+<section class="container" style="padding-top:48px;padding-bottom:16px">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin-bottom:24px">
+    <div>
+      <div class="sec-eyebrow">User Reviews</div>
+      <h2 class="sec-title" style="margin-bottom:0">3,847 Verified Reviews</h2>
+    </div>
+    <select id="sort-select" onchange="sortReviews(this.value)" style="background:#fff;border:1.5px solid #e8e0d0;padding:9px 14px;border-radius:8px;font-family:inherit;font-size:13px;outline:none;cursor:pointer">
+      <option value="recent">Most Recent</option>
+      <option value="highest">Highest Rated</option>
+      <option value="lowest">Lowest Rated</option>
+      <option value="helpful">Most Helpful</option>
+    </select>
+  </div>
+
+  <!-- FILTER BUTTONS -->
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filterReviews('all',this)">All Reviews</button>
+    <button class="filter-btn" onclick="filterReviews('5',this)">⭐⭐⭐⭐⭐ 5 Stars</button>
+    <button class="filter-btn" onclick="filterReviews('4',this)">⭐⭐⭐⭐ 4 Stars</button>
+    <button class="filter-btn" onclick="filterReviews('fresher',this)">🎓 Freshers</button>
+    <button class="filter-btn" onclick="filterReviews('experienced',this)">💼 Experienced</button>
+    <button class="filter-btn" onclick="filterReviews('tech',this)">💻 Tech</button>
+    <button class="filter-btn" onclick="filterReviews('mba',this)">📊 MBA/Finance</button>
+  </div>
+
+  <!-- FEATURED REVIEW -->
+  <div class="featured-review">
+    <div class="feat-tag">⭐ Featured Review of the Month</div>
+    <div class="feat-text">"I was jobless for 6 months, applying to 40+ companies with zero callbacks. I rebuilt my resume with ResumeAI in 8 minutes — the ATS optimization was the key I was missing. Within 10 days I had 6 interview calls. I just signed my offer letter with Amazon India."</div>
+    <div class="feat-author">
+      <div class="feat-av">V</div>
+      <div>
+        <div class="feat-name">Vikram Nair</div>
+        <div class="feat-role">SDE-2 — Amazon India · Bangalore</div>
+      </div>
+    </div>
+    <div class="feat-result">🎯 Result: 6 interview calls in 10 days · Hired at Amazon India · ₹32 LPA package</div>
+  </div>
+
+  <!-- REVIEWS GRID -->
+  <div class="reviews-grid" id="reviews-grid"></div>
+
+  <button class="load-more-btn" id="load-more-btn" onclick="loadMore()">Load More Reviews ↓</button>
+
+  <!-- PAGINATION -->
+  <div class="pagination">
+    <button class="page-btn active">1</button>
+    <button class="page-btn" onclick="showToast('Page 2 loading...')">2</button>
+    <button class="page-btn" onclick="showToast('Page 3 loading...')">3</button>
+    <button class="page-btn" onclick="showToast('Page 4 loading...')">4</button>
+    <button class="page-btn" onclick="showToast('Page 5 loading...')">5</button>
+    <button class="page-btn" onclick="showToast('...')">→</button>
+  </div>
+</section>
+
+<!-- AD SLOT -->
+<div class="container">
+  <div class="ad-slot"><div class="ad-lbl">Advertisement</div><div>📢 Bottom Banner AdSense · High CTR</div></div>
+</div>
+
+<!-- WRITE A REVIEW -->
+<section class="write-review-sec" id="write-review">
+  <div class="text-center" style="margin-bottom:32px">
+    <div class="sec-eyebrow">Share Your Experience</div>
+    <h2 style="font-family:'DM Serif Display',serif;font-size:clamp(24px,3.5vw,38px);letter-spacing:-1px;margin-bottom:8px">Write a Review</h2>
+    <p style="color:#64748b;font-size:15px">Help other job seekers by sharing your ResumeAI story</p>
+  </div>
+  <div class="review-form">
+    <div class="form-group">
+      <label class="form-label">Your Rating</label>
+      <div class="star-select" id="star-select">
+        <span class="star-opt" onclick="setRating(1)" data-val="1">⭐</span>
+        <span class="star-opt" onclick="setRating(2)" data-val="2">⭐</span>
+        <span class="star-opt" onclick="setRating(3)" data-val="3">⭐</span>
+        <span class="star-opt" onclick="setRating(4)" data-val="4">⭐</span>
+        <span class="star-opt" onclick="setRating(5)" data-val="5">⭐</span>
+      </div>
+      <div style="font-size:12px;color:var(--mist)" id="rating-label">Click to rate</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Your Name</label>
+      <input type="text" id="rev-name" class="form-input" placeholder="e.g. Priya Sharma">
+    </div>
+    <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      <div class="form-group">
+        <label class="form-label">Current Role</label>
+        <input type="text" id="rev-role" class="form-input" placeholder="e.g. Software Engineer">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Company Hired At</label>
+        <input type="text" id="rev-company" class="form-input" placeholder="e.g. Google, TCS...">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Your Review</label>
+      <textarea id="rev-text" class="form-input" rows="5" placeholder="Tell us your story — how did ResumeAI help you? Did you get interview calls? What improved in your resume?"></textarea>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Your Result (optional)</label>
+      <input type="text" id="rev-result" class="form-input" placeholder="e.g. Got 5 interview calls in 1 week, hired at Infosys">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Category</label>
+      <select id="rev-cat" class="form-input">
+        <option value="">Select your profile...</option>
+        <option value="fresher">🎓 Fresh Graduate</option>
+        <option value="experienced">💼 Experienced Professional</option>
+        <option value="tech">💻 Tech / Engineering</option>
+        <option value="mba">📊 MBA / Finance</option>
+        <option value="other">📌 Other</option>
+      </select>
+    </div>
+    <button class="btn-submit" onclick="submitReview()">✅ Submit Review</button>
+    <div style="font-size:12px;color:var(--mist);text-align:center;margin-top:12px">Reviews are verified and published within 24 hours</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <h2>Ready to Join 50,000+ Success Stories?</h2>
+  <p>Build your AI-optimized resume in 2 minutes. Free forever.</p>
+  <button class="btn-cta" onclick="window.location.href='index.html'">⚡ Build My Resume Free →</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div><div class="footer-brand">Resume<span style="color:var(--gold);font-style:italic">AI</span> Pro</div><div style="color:#94a3b8;font-size:12px;line-height:1.7">Free AI resume builder powered by Google Gemini. Helping job seekers land their dream jobs worldwide.</div></div>
+      <div><h4>Tools</h4><a href="index.html#builder">Resume Builder</a><a href="index.html#analyzer">ATS Analyzer</a><a href="index.html">Cover Letter</a></div>
+      <div><h4>Company</h4><a href="#">About</a><a href="reviews.html">Reviews</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+      <div><h4>Follow</h4><a href="#">Twitter / X</a><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">Newsletter</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 ResumeAI Pro. All rights reserved.</span><span>Powered by Google Gemini AI · Hosted on Vercel (Free)</span></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ── REVIEW DATA ───────────────────────────────────────────────────────
+var ALL_REVIEWS = [
+  {name:"Arjun Nair",role:"Product Manager",company:"Swiggy",location:"Bangalore",rating:5,cat:"experienced",date:"2 days ago",avatar:"A",color:"#0ea5e9",text:"I applied to 12 companies after rebuilding my resume with ResumeAI and got 8 interview calls within 2 weeks. The ATS optimization was exactly what I needed. The AI bullet points were shockingly good — much better than what I had written.",result:"8 interview calls · Got hired at Swiggy",helpful:142,tag:"Experienced Pro"},
+  {name:"Priyanka Mehta",role:"Software Engineer",company:"Infosys",location:"Mumbai",rating:5,cat:"fresher",date:"4 days ago",avatar:"P",color:"#8b5cf6",text:"As a fresh graduate I had no idea how to write a resume. ResumeAI built mine in 3 minutes, the AI summary was incredible — sounded exactly like a professional. Got my first job at Infosys!",result:"First job secured · Infosys · ₹6 LPA",helpful:98,tag:"Fresh Graduate"},
+  {name:"Rohan Gupta",role:"SDE-2",company:"Google India",location:"Hyderabad",rating:5,cat:"tech",date:"1 week ago",avatar:"R",color:"#10b981",text:"The analyzer told me my resume had a 61% ATS score. It showed me exactly which keywords were missing. I fixed them, reapplied and got a callback from Google within a week. Cannot believe this tool is free.",result:"ATS score 61% → 94% · Hired at Google",helpful:287,tag:"Tech / Engineering"},
+  {name:"Kavya Reddy",role:"Marketing Manager",company:"Zomato",location:"Delhi",rating:5,cat:"experienced",date:"1 week ago",avatar:"K",color:"#f59e0b",text:"I was skeptical about AI-written resumes but the quality genuinely surprised me. The cover letter generator produced something I could not have written better myself. 3 offers in 3 weeks!",result:"3 job offers in 3 weeks",helpful:76,tag:"Marketing"},
+  {name:"Amit Sharma",role:"Data Analyst",company:"Razorpay",location:"Pune",rating:5,cat:"tech",date:"2 weeks ago",avatar:"A",color:"#ef4444",text:"Best free tool I've ever used. The ATS score feature alone is worth gold. Before I was at 58%, now at 91% after following the suggestions. Razorpay reached out to me through Naukri — I didn't even apply!",result:"ATS 58% → 91% · Got headhunted by Razorpay",helpful:134,tag:"Data Science"},
+  {name:"Sneha Iyer",role:"Finance Analyst",company:"KPMG",location:"Chennai",rating:5,cat:"mba",date:"2 weeks ago",avatar:"S",color:"#c0392b",text:"MBA graduate here. The resume AI perfectly restructured my experience to highlight financial impact. The keywords it added for finance roles were exactly what KPMG was looking for. Worth every second.",result:"Hired at KPMG · ₹14 LPA",helpful:62,tag:"MBA/Finance"},
+  {name:"Rahul Verma",role:"Frontend Developer",company:"CRED",location:"Bangalore",rating:5,cat:"tech",date:"3 weeks ago",avatar:"R",color:"#6366f1",text:"Was applying for 3 months with no response. Ran my resume through the analyzer — it was an eye opener. 4 critical issues I never knew about. Fixed them in 10 minutes. Got 4 callbacks in 1 week including CRED!",result:"4 callbacks in 1 week · Got hired at CRED",helpful:211,tag:"Tech"},
+  {name:"Ananya Singh",role:"HR Business Partner",company:"Microsoft India",location:"Noida",rating:5,cat:"experienced",date:"3 weeks ago",avatar:"A",color:"#0891b2",text:"Irony of an HR professional using a resume builder! But honestly the AI output is better than most resumes I see professionally. The ATS optimization feature is genuinely valuable. Recommended it to my whole team.",result:"Moved to Microsoft India",helpful:88,tag:"HR/Management"},
+  {name:"Deepak Kumar",role:"Cloud Engineer",company:"Amazon AWS",location:"Hyderabad",rating:4,cat:"tech",date:"1 month ago",avatar:"D",color:"#059669",text:"Very good tool overall. The AI suggestions were solid and the ATS analyzer is brilliant. Only reason for 4 stars is I wished the PDF download was a bit more formatted. But for a free tool this is incredible.",result:"AWS Cloud Engineer role secured",helpful:45,tag:"Cloud/DevOps"},
+  {name:"Pooja Malhotra",role:"Business Analyst",company:"Accenture",location:"Gurgaon",rating:5,cat:"mba",date:"1 month ago",avatar:"P",color:"#d97706",text:"Used the cover letter generator for Accenture application and it was so personalized and compelling. The hiring manager actually commented on the quality of my cover letter in the interview. Joined Accenture last month!",result:"Hired at Accenture · ₹12 LPA",helpful:93,tag:"Consulting"},
+  {name:"Karan Patel",role:"Product Designer",company:"Flipkart",location:"Bangalore",rating:5,cat:"experienced",date:"1 month ago",avatar:"K",color:"#7c3aed",text:"As a designer I was hesitant about an AI writing my resume. But the output matched my style perfectly after I gave it context. The summary it generated was better than the one I agonized over for hours.",result:"Hired at Flipkart Design Team",helpful:71,tag:"Design/UX"},
+  {name:"Meera Krishnan",role:"Machine Learning Engineer",company:"Ola",location:"Bangalore",rating:5,cat:"tech",date:"6 weeks ago",avatar:"M",color:"#be185d",text:"The ML keyword optimization is genuinely impressive. It added all the right technical terms — TensorFlow, PyTorch, MLOps — in context. My ATS score went from 52% to 89%. Got 3 ML roles offered in 2 weeks.",result:"ATS 52% → 89% · 3 ML offers in 2 weeks",helpful:167,tag:"AI/ML Engineer"},
+];
+
+var currentFilter = 'all';
+var displayedCount = 8;
+
+function renderReviews(reviews) {
+  var grid = document.getElementById('reviews-grid');
+  grid.innerHTML = '';
+  var toShow = reviews.slice(0, displayedCount);
+  toShow.forEach(function(r, i) {
+    var stars = '';
+    for (var s=0; s<5; s++) stars += s < r.rating ? '⭐' : '☆';
+    var card = document.createElement('div');
+    card.className = 'review-card';
+    card.style.animationDelay = (i * 0.06) + 's';
+    card.innerHTML =
+      '<div class="review-badge"><span class="verified-badge">✓ Verified</span></div>' +
+      '<div class="review-header">' +
+        '<div class="review-avatar" style="background:' + r.color + '">' + r.avatar + '</div>' +
+        '<div class="review-info">' +
+          '<div class="review-name">' + r.name + '</div>' +
+          '<div class="review-role">' + r.role + '</div>' +
+          '<div class="review-company" style="color:' + r.color + '">' + r.company + ' · ' + r.location + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="review-stars">' + stars + '</div>' +
+      '<div class="review-text">"' + r.text + '"</div>' +
+      (r.result ? '<div style="background:#f0fdf4;border-left:3px solid #10b981;padding:9px 12px;border-radius:6px;font-size:12px;color:#15803d;font-weight:600;margin-bottom:12px">🎯 ' + r.result + '</div>' : '') +
+      '<div class="review-footer">' +
+        '<span class="review-tag">' + r.tag + '</span>' +
+        '<span class="review-date">' + r.date + '</span>' +
+      '</div>' +
+      '<div class="helpful-row">' +
+        '<span>Helpful?</span>' +
+        '<button class="helpful-btn" id="help-' + i + '" onclick="markHelpful(this,' + r.helpful + ')">👍 ' + r.helpful + '</button>' +
+        '<button class="helpful-btn" onclick="showToast(\'Thanks for flagging!\')">🚩 Report</button>' +
+      '</div>';
+    grid.appendChild(card);
+  });
+  var loadBtn = document.getElementById('load-more-btn');
+  if (loadBtn) loadBtn.style.display = displayedCount >= reviews.length ? 'none' : 'block';
+}
+
+function getFilteredReviews() {
+  if (currentFilter === 'all') return ALL_REVIEWS;
+  if (currentFilter === '5') return ALL_REVIEWS.filter(function(r){return r.rating===5;});
+  if (currentFilter === '4') return ALL_REVIEWS.filter(function(r){return r.rating===4;});
+  return ALL_REVIEWS.filter(function(r){return r.cat===currentFilter;});
+}
+
+function filterReviews(f, btn) {
+  currentFilter = f;
+  displayedCount = 8;
+  document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
+  btn.classList.add('active');
+  renderReviews(getFilteredReviews());
+  showToast('Showing: ' + btn.textContent);
+}
+
+function sortReviews(val) {
+  var list = getFilteredReviews().slice();
+  if (val==='highest') list.sort(function(a,b){return b.rating-a.rating;});
+  else if (val==='lowest') list.sort(function(a,b){return a.rating-b.rating;});
+  else if (val==='helpful') list.sort(function(a,b){return b.helpful-a.helpful;});
+  renderReviews(list);
+}
+
+function loadMore() {
+  displayedCount += 4;
+  renderReviews(getFilteredReviews());
+  showToast('Loading more reviews...');
+}
+
+function markHelpful(btn, count) {
+  if (btn.classList.contains('voted')) { showToast('Already voted!'); return; }
+  btn.classList.add('voted');
+  btn.textContent = '👍 ' + (count+1);
+  showToast('Thanks for your feedback!');
+}
+
+// ── WRITE REVIEW ──────────────────────────────────────────────────────
+var selectedRating = 0;
+var ratingLabels = ['','😞 Poor','😐 Fair','😊 Good','😃 Very Good','🤩 Excellent!'];
+function setRating(val) {
+  selectedRating = val;
+  document.querySelectorAll('.star-opt').forEach(function(s,i){
+    s.classList.toggle('active', i < val);
+  });
+  document.getElementById('rating-label').textContent = ratingLabels[val];
+}
+
+function submitReview() {
+  var name = document.getElementById('rev-name').value.trim();
+  var text = document.getElementById('rev-text').value.trim();
+  if (!name) { showToast('⚠️ Please enter your name'); return; }
+  if (!selectedRating) { showToast('⚠️ Please select a star rating'); return; }
+  if (text.length < 30) { showToast('⚠️ Please write at least 30 characters'); return; }
+
+  // Add to reviews
+  var newReview = {
+    name: name,
+    role: document.getElementById('rev-role').value || 'Job Seeker',
+    company: document.getElementById('rev-company').value || 'New Hire',
+    location: 'India',
+    rating: selectedRating,
+    cat: document.getElementById('rev-cat').value || 'other',
+    date: 'Just now',
+    avatar: name[0].toUpperCase(),
+    color: '#'+Math.floor(Math.random()*0xffffff).toString(16).padStart(6,'0'),
+    text: text,
+    result: document.getElementById('rev-result').value,
+    helpful: 0,
+    tag: 'New Review'
+  };
+  ALL_REVIEWS.unshift(newReview);
+  currentFilter = 'all';
+  displayedCount = 8;
+  renderReviews(ALL_REVIEWS);
+
+  // Reset form
+  ['rev-name','rev-role','rev-company','rev-text','rev-result'].forEach(function(id){document.getElementById(id).value='';});
+  document.getElementById('rev-cat').value='';
+  setRating(0);
+  document.querySelectorAll('.star-opt').forEach(function(s){s.classList.remove('active');});
+  document.getElementById('rating-label').textContent = 'Click to rate';
+
+  showToast('🎉 Review submitted! Thank you for sharing your story.');
+  document.getElementById('reviews-grid').scrollIntoView({behavior:'smooth'});
+}
+
+// ── ANIMATED COUNTERS ─────────────────────────────────────────────────
+function animateCounter(id, target, suffix, duration) {
+  suffix = suffix || '';
+  duration = duration || 2000;
+  var el = document.getElementById(id);
+  if (!el) return;
+  var start = 0, step = target / (duration / 16);
+  var timer = setInterval(function(){
+    start = Math.min(start + step, target);
+    el.textContent = Math.floor(start).toLocaleString() + suffix;
+    if (start >= target) clearInterval(timer);
+  }, 16);
+}
+
+// ── RATING BARS ANIMATION ─────────────────────────────────────────────
+function animateBars() {
+  setTimeout(function(){document.getElementById('bar5').style.width='81%';},200);
+  setTimeout(function(){document.getElementById('bar4').style.width='14%';},400);
+  setTimeout(function(){document.getElementById('bar3').style.width='4%'; },600);
+  setTimeout(function(){document.getElementById('bar2').style.width='1%'; },800);
+  setTimeout(function(){document.getElementById('bar1').style.width='.5%';},1000);
+}
+
+// ── TOAST ─────────────────────────────────────────────────────────────
+var toastTimer;
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg; t.style.display = 'block';
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){t.style.display='none';}, 3400);
+}
+
+// ── INTERSECTION OBSERVER (trigger counters when in view) ─────────────
+var counted = false;
+var observer = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if (e.isIntersecting && !counted) {
+      counted = true;
+      animateCounter('count1','50000','+');
+      animateCounter('count2','87','%');
+      animateCounter('count3','3124','');
+      animateCounter('count4','500','+');
+      animateCounter('count5','47','');
+      animateBars();
+    }
+  });
+},{threshold:0.3});
+var statsBar = document.querySelector('.stats-bar');
+if (statsBar) observer.observe(statsBar);
+
+// ── INIT ─────────────────────────────────────────────────────────────
+renderReviews(ALL_REVIEWS);
+</script>
+</body>
+</html>
